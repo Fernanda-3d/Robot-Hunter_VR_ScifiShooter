@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: rock_effect
+  m_Shader: {fileID: -6465566751694194690, guid: 844e2454f076c684fa978e2e5174b7d6, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - MainTexture:
+        m_Texture: {fileID: 2800000, guid: 312c93ed564bd8840ab4818e3db14d8a, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - FresnelPower: 5.16
+    - NoiseDissolve: 1.34
+    - NoiseScale: 10
+    - NormalStrenght: 8
+    - VoronoiDissolve: 3.79
+    - VoronoiScale: 11
+    m_Colors:
+    - FresnelColor: {r: 26.097532, g: 5.7387247, b: 1.5029993, a: 0.92156863}
+    - MainColor: {r: 2.6701567, g: 2.6701567, b: 2.6701567, a: 0.78431374}
+    - NoiseSpeed: {r: -0.1, g: 0.1, b: 0, a: 0}
+    - VoronoiColor: {r: 23.968628, g: 2.8862746, b: 2.0078433, a: 0.9098039}
+    - VoronoiSpeed: {r: 0.1, g: 0, b: 0, a: 0}
+  m_BuildTextureStacks: []

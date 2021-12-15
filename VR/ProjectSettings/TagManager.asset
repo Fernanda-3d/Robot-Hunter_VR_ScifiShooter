@@ -4,8 +4,8 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Ignite
-  - Camera
+  - EndMatchButton
+  - LogoutButton
   layers:
   - Default
   - TransparentFX
@@ -15,11 +15,11 @@ TagManager:
   - UI
   - 
   - 
-  - Grabbable
-  - Hands
-  - Teleporter
-  - NoHandCollide
   - 
+  - 
+  - 
+  - Ground
+  - Distructable
   - 
   - 
   - 

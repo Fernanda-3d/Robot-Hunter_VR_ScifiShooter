@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 22
-  productGUID: 00000000000000000000000000000000
+  productGUID: 90d53b93ac589f0488bd131af7985a24
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -147,7 +147,7 @@ PlayerSettings:
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
     Android: com.photonengine.shooter
-    Standalone: unity.Exit Games.VR Shooting Range
+    Standalone: com.DefaultCompany.VR
     Tizen: com.photonengine.shooter
     iPhone: com.photonengine.shooter
     tvOS: com.photonengine.shooter
@@ -744,7 +744,7 @@ PlayerSettings:
     27: PHOTON_UNITY_NETWORKING;PUN_2_0_OR_NEWER;PUN_2_OR_NEWER
   additionalCompilerArguments: {}
   platformArchitecture:
-    iPhone: 2
+    iPhone: 1
   scriptingBackend:
     Android: 0
     Standalone: 0
@@ -843,7 +843,7 @@ PlayerSettings:
     m_VersionCode: 1
     m_VersionName: 
   apiCompatibilityLevel: 6
-  activeInputHandler: 0
+  activeInputHandler: 1
   cloudProjectId: 
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []

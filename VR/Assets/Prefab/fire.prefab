@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 6728496485030387135}
   m_Layer: 0
   m_Name: fire
-  m_TagString: Untagged
+  m_TagString: bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -207,8 +207,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be2346d22e8e67d40b39fdfa048304b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrust: 8
-  inflated: {fileID: 4191780443061374674}
+  myProperties: {fileID: 11400000, guid: bda6a3a830c53d648a6b4879e2a41894, type: 2}
+  speed: 1000
+  damage: 1
 --- !u!54 &6728496485030387135
 Rigidbody:
   m_ObjectHideFlags: 0

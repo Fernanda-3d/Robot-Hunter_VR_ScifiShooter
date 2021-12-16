@@ -6,6 +6,12 @@ TagManager:
   tags:
   - EndMatchButton
   - LogoutButton
+  - spread
+  - inflate
+  - faster
+  - Camera
+  - bullet
+  - gun
   layers:
   - Default
   - TransparentFX

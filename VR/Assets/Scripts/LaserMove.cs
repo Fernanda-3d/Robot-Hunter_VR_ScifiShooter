@@ -4,30 +4,31 @@ using UnityEngine;
 
 public class LaserMove : MonoBehaviour
 {
+    public BulletProperties_SO myProperties;
+    
     private Rigidbody rb;
-    [SerializeField] float thrust = 10f;
-    [SerializeField] GameObject inflated;
+    [SerializeField] float speed = 1000f;
+    public int damage = 1;
+
+    //[SerializeField] GameObject inflated;
+    //public Vector3 sizeChange;
     
 
-   
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
+        transform.localScale = myProperties.scale;
+        speed = myProperties.speed;
+        damage = myProperties.damage;
+      
     }
     // Update is called once per frame
     void Update()
     {
-        rb.velocity = transform.forward * thrust;
+        rb.AddForce(transform.forward * speed);
                
-        Destroy(gameObject, 2f);
+       // Destroy(gameObject, 2f);
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if(other.gameObject.tag == "inflate")
-        {
-            inflated.transform.localScale = Vector3.one * 0.05f;
-                        
-        }
-    }
+   
 }

@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d85bfb0738159e04788f3a576c0e7849, type: 3}
   m_Name: Bullet_Inflate
   m_EditorClassIdentifier: 
-  scale: {x: 5, y: 5, z: 5}
+  scale: {x: 10, y: 10, z: 10}
   speed: 100
   damage: 5

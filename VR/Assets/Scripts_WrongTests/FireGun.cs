@@ -5,7 +5,7 @@ using UnityEngine;
 public class FireGun : MonoBehaviour
 {
     
- // public BulletProperties_SO currentBulletProperties;
+    public BulletProperties_SO currentBulletProperties;
   
 
     [SerializeField] GameObject laserBeam1, laserBeam2, laserBeam3;

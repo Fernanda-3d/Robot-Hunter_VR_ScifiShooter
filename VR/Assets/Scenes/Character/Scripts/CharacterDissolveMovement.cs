@@ -4,26 +4,26 @@ using UnityEngine;
 
 public class CharacterDissolveMovement : MonoBehaviour
 {
-    [SerializeField] Transform[] points;
-    int pointIndex = 0;
+  //[SerializeField] Transform[] points;
+  //int pointIndex = 0;
     bool isMoving = false;
     [SerializeField] SkinnedMeshRenderer[] renderer;
 
     void Start()
     {
-        if (points.Length == 0)
+      /*if (points.Length == 0)
         {
             Debug.LogWarning("0 points");
             return;
         }
 
-        transform.position = points[0].position;
+        transform.position = points[0].position; */
     }
 
    
     void Update()
     {
-        if (!isMoving )
+        if (!isMoving && Input.GetKeyDown(KeyCode.Space))
         {
             StartCoroutine(Move());
         }
@@ -32,8 +32,8 @@ public class CharacterDissolveMovement : MonoBehaviour
     IEnumerator Move()
     {
         isMoving = true;
-        int lastPoint = pointIndex;
-        pointIndex = (pointIndex + 1) % points.Length;
+      //int lastPoint = pointIndex;
+      //pointIndex = (pointIndex + 1) % points.Length;
 
         //start
         float dissolveTime = 0; 
@@ -48,14 +48,14 @@ public class CharacterDissolveMovement : MonoBehaviour
             yield return new WaitForEndOfFrame();
         }
 
-        //movement
+      /*//movement
         float path = 0;
         while (path <= 1f)
         {
             transform.position = Vector3.Lerp(points[lastPoint].position, points[pointIndex].position, path);
             path += Time.deltaTime;
             yield return new WaitForEndOfFrame();
-        }
+        } */
 
         while (dissolveTime >= 0f)
         {
@@ -66,7 +66,7 @@ public class CharacterDissolveMovement : MonoBehaviour
             dissolveTime -= Time.deltaTime;
             yield return new WaitForEndOfFrame();
         }
-        isMoving = false;
+      isMoving = false;
 
     }
 }

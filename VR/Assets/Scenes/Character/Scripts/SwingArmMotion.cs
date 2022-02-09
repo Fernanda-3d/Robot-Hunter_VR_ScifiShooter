@@ -23,13 +23,11 @@ public class SwingArmMotion : MonoBehaviour
     public float Speed = 70;
     private float HandSpeed;
 
-  //bool isMoving = false;
-
- // AudioSource audioSource;
+  
 
      void Start()
     {
-      //audioSource = GetComponent<AudioSource>();
+      
 
         //Set original Previous frame positions at start up
         PlayerPositionPreviousFrame = transform.position;
@@ -56,11 +54,12 @@ public class SwingArmMotion : MonoBehaviour
 
         //Add them up to get the hand speed from the user minus the movement of the player 
         HandSpeed = ((leftHandDistanceMoved - playerDistanceMoved) + (rightHandDistanceMoved - playerDistanceMoved));
+        
 
         if (Time.timeSinceLevelLoad > 1f)
             transform.position += ForwardDirection.transform.forward * HandSpeed * Speed * Time.deltaTime;
         
-
+      
 
         //Set previous positions of hands for the next frame
         PositionPreviousFrameLeftHand = PositionThisFrameLeftHand;

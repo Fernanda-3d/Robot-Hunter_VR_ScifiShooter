@@ -1676,6 +1676,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae3fdce100a03f54e973790fdfc8d496, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scorePerHit: 1
   enemy: {fileID: 5946747412015784686}
 --- !u!114 &919132148018946238
 MonoBehaviour:
@@ -1689,11 +1690,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ccc7efe3b97aa64c91d6e8c42664d7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  points:
-  - {fileID: 1977973206}
-  - {fileID: 1526199698}
-  - {fileID: 1629671999}
-  - {fileID: 2048975718}
   renderer:
   - {fileID: 8385721401823068926}
 --- !u!1 &6627402207332022175

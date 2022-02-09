@@ -12,6 +12,7 @@ TagManager:
   - Camera
   - bullet
   - gun
+  - Enemy
   layers:
   - Default
   - TransparentFX

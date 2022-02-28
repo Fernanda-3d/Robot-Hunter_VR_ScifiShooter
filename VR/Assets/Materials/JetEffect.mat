@@ -8,7 +8,8 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: JetEffect
-  m_Shader: {fileID: -6465566751694194690, guid: 844e2454f076c684fa978e2e5174b7d6, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 844e2454f076c684fa978e2e5174b7d6,
+    type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -20,7 +21,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - MainTexture:
-        m_Texture: {fileID: 2800000, guid: 64211e0438b7c4a48a389ccac6142703, type: 3}
+        m_Texture: {fileID: 2800000, guid: f92424af8a6fa354d83079c4bf43b782, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -37,15 +38,15 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - FresnelPower: 3.39
+    - FresnelPower: 4.6
     - NoiseDissolve: 1.6
     - NoiseScale: 40.69
     - NormalStrenght: 5
     - VoronoiDissolve: 1.78
     - VoronoiScale: 2
     m_Colors:
-    - FresnelColor: {r: 52.19505, g: 11.257756, b: 2.8656106, a: 0.92156863}
-    - MainColor: {r: 2.6701567, g: 2.6701567, b: 2.6701567, a: 0.78431374}
+    - FresnelColor: {r: 23.968628, g: 5.2705884, b: 1.3803922, a: 0.92156863}
+    - MainColor: {r: 0.26904672, g: 0.23774253, b: 0.23774253, a: 0.78431374}
     - NoiseSpeed: {r: -0.1, g: 0.1, b: 0, a: 0}
     - VoronoiColor: {r: 47.937256, g: 5.772549, b: 4.0156865, a: 0.9098039}
     - VoronoiSpeed: {r: 0.1, g: 0, b: 0, a: 0}

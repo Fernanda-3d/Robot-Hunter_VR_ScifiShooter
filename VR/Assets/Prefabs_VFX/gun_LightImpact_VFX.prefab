@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1472666535141146785}
   - component: {fileID: 1472666535141146719}
   - component: {fileID: 1472666535141146784}
+  - component: {fileID: 6310400530406183233}
   m_Layer: 0
   m_Name: gun_LightImpact_VFX
   m_TagString: Untagged
@@ -4864,3 +4865,15 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
+--- !u!114 &6310400530406183233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1472666535141146786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a17b9aea3e4361a40add45398bb96334, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

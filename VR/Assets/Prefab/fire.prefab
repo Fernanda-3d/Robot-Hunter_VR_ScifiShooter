@@ -13,11 +13,12 @@ GameObject:
   - component: {fileID: 7105663199893122543}
   - component: {fileID: 6992959612522569091}
   - component: {fileID: 3616237805936466088}
-  - component: {fileID: 6269492699312797544}
   - component: {fileID: 6728496485030387135}
-  m_Layer: 0
+  - component: {fileID: -8363353951641353644}
+  - component: {fileID: 3393780788148728815}
+  m_Layer: 6
   m_Name: fire
-  m_TagString: bullet
+  m_TagString: Laser
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31,7 +32,7 @@ Transform:
   m_GameObject: {fileID: 4191780443061374674}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0.676}
-  m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
+  m_LocalScale: {x: 0.05, y: 0.05, z: 0.52}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -195,7 +196,23 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &6269492699312797544
+--- !u!54 &6728496485030387135
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4191780443061374674}
+  serializedVersion: 2
+  m_Mass: 0.25
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 1
+--- !u!114 &-8363353951641353644
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -207,22 +224,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be2346d22e8e67d40b39fdfa048304b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myProperties: {fileID: 11400000, guid: bda6a3a830c53d648a6b4879e2a41894, type: 2}
   speed: 1000
-  damage: 1
---- !u!54 &6728496485030387135
-Rigidbody:
+--- !u!114 &3393780788148728815
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4191780443061374674}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 112
-  m_CollisionDetection: 0
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1c7cbf13267f7442b53f8a172798022, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosion1: {fileID: 1472666535141146786, guid: a316ea2d7731e544ba37d3589cea7728,
+    type: 3}
+  explosion2: {fileID: 3126055500531205655, guid: e0f746711b673b84bbd383dc9fe0090b,
+    type: 3}
+  explosion3: {fileID: 5226940547576685653, guid: 097fead551890554eb168bec800149fc,
+    type: 3}

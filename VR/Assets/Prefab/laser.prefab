@@ -92,9 +92,9 @@ GameObject:
   m_Component:
   - component: {fileID: 3522290923755272004}
   - component: {fileID: 5647515977863617495}
-  - component: {fileID: 6603672212180704223}
   - component: {fileID: -4019239531152228471}
   - component: {fileID: 5636531771133450285}
+  - component: {fileID: 3646893566074148432}
   m_Layer: 0
   m_Name: laser
   m_TagString: bullet
@@ -213,21 +213,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &6603672212180704223
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7497861629407288262}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be2346d22e8e67d40b39fdfa048304b7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myProperties: {fileID: 11400000, guid: bda6a3a830c53d648a6b4879e2a41894, type: 2}
-  speed: 10
-  damage: 1
 --- !u!54 &-4019239531152228471
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -257,3 +242,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.02, y: 0.02, z: 0.1}
   m_Center: {x: 0, y: 0, z: -0.00004759431}
+--- !u!114 &3646893566074148432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7497861629407288262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be2346d22e8e67d40b39fdfa048304b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myProperties: {fileID: 0}
+  speed: 1000
+  damage: 1

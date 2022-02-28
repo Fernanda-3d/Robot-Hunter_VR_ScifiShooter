@@ -406,7 +406,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: bd1c78db698fdcb4885fd4499abe191a,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.8
+      value: 4.76
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: bd1c78db698fdcb4885fd4499abe191a,
         type: 3}
@@ -603,22 +603,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!114 &1416877896
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1416877892}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 23e2ff45d8c89494eae86646926b39b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ActionKey: 32
-  JumpForce: 8
-  JumpFeedback: {fileID: 0}
-  LandingFeedback: {fileID: 0}
 --- !u!1 &1590208361
 GameObject:
   m_ObjectHideFlags: 0

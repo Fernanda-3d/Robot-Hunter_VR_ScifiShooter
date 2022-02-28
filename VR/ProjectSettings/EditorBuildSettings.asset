@@ -8,12 +8,15 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Character/Character_menu.unity
     guid: 43bd751e44cc49646a17a548a45cf694
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Character/Character_Test.unity
     guid: 5242d1423ef11ae41abbca8b011fdbea
+  - enabled: 1
+    path: Assets/Scenes/XR_Rig_Template.unity
+    guid: 2df64b07f9a9be6419109e3aea9cb51b
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: f3d36b094c7e90a48bfeecc8253553a0,
       type: 2}

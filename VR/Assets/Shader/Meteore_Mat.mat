@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Meteore_Mat
+  m_Shader: {fileID: -6465566751694194690, guid: 51d375627c69bac49b544dac6a1f36b4, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_3888c99d07024d7dad401bbb92d6981b:
+        m_Texture: {fileID: 2800000, guid: 1160a5d2285412546ae84383d370312b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - Vector1_9717e0447f704253a49bfd47467919f8: 1.91
+    - Vector1_bcc51d16b0de47818f5dffeac0d646b1: 5.26
+    - Vector1_f59c74bbd70c4888beec53db76215dca: 5
+    m_Colors:
+    - Color_2cd704c346cb49f5ad49826f2eed2dec: {r: 536.12555, g: 11.227761, b: 0, a: 0}
+    - Color_b9d9f0be577542569b87d140563377b4: {r: 11.28045, g: 1.849254, b: 0, a: 0}
+    - Color_ef766e66a5024a1da7f3c1c691cdf8e3: {r: 13.86667, g: 11.92157, b: 8.094118, a: 0}
+    - Vector2_efdef61b53d6484e8eb48465a5fc29da: {r: 0.1, g: 0, b: 0, a: 0}
+  m_BuildTextureStacks: []

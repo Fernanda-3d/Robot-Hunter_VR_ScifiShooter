@@ -9,8 +9,8 @@ public class AsteroidsSpawner : MonoBehaviour
 
     [Header("Rate of instantiation")]
     public float spawnRate = 1f;
-    float timeDelay = 2;
-    public float increment = 0.25f;
+    float timeDelay = 1f;
+    //public float increment = 0.25f;
 
     [Header("Asteroid model")]
     public GameObject asteroidModel;
@@ -60,7 +60,7 @@ public class AsteroidsSpawner : MonoBehaviour
             asteroid.transform.SetParent(asteroidParent);
 
             yield return new WaitForSeconds(timeDelay);
-            timeDelay -= increment;
+           // timeDelay -= increment;
 
             //Attempt to increase the spawn rate after a certain amount of time
           /*   if (spawnRate == 30f)

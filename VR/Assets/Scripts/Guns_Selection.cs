@@ -1,64 +1,75 @@
 using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Guns_Selection : MonoBehaviour
 {
-    /*Create a Weapon Selection with 1st button press by enabling and disabling the child objects*/
+    //get reference of the objects
+    private GameObject[] gunList;
+    
+    private int index; 
 
-    //create a variable int to represent your gun with index selection
-    public int selectedWeapon = 0;
-   
-    void Start()
-    {
-        SelectWeapon();
-      //  PressButton();
-        Debug.Log("Waiting for button press");
-    }
 
-    private void SelectWeapon()
+    private void Start()
     {
-        int i = 0;
-        /* loop through all of the weapons and if the selected weapon index does not match
-         * with the weapon we're looping trhough, we will disable, and if does match we will enable*/
-        foreach (Transform weapon in transform) // this means we will get all the transforms on the child and see if they match with the transform we have selected
+        //this is getting the gun index that was selected in the menu scene to load in the main scene
+        index = PlayerPrefs.GetInt("GunSelected");
+
+        //define the size of the list
+        gunList = new GameObject[transform.childCount];
+
+        for (int i = 0; i < transform.childCount; i++) //use the index to get track of the transforms
         {
-            if (i == selectedWeapon) /*we want to enable*/
-            weapon.gameObject.SetActive(true);
-            else /*if doesnt match*/
-            weapon.gameObject.SetActive(false);
-
-            i++;
+            gunList[i] = transform.GetChild(i).gameObject;  //this is used to fill up the array
         }
+
+        //turn them off
+        foreach (GameObject gunObj in gunList)
+            gunObj.SetActive(false);
+
+        //turn on the selected gun putting on index instead of number if index in the array
+        if (gunList[index])                 //if we have the gun index 0 
+            gunList[index].SetActive(true); //them turn on
+             
     }
 
-    void Update()
+    public void PressLeft()
     {
-       // PressButton();
+        //turn off the model, change the index, turn on the new model for the new index
+
+        // Toggle off the current model
+        gunList[index].SetActive(false);
+
+        index--; //the same as index  = index -1;
+        if (index < 0) //if is less then 0
+            index = gunList.Length - 1; //them bring me back to the end of the index and keep goind down - EX. the last index is 3 - so you do 0, 3, 2, 1, 0...
+
+        //Toggle on the new moddel
+        gunList[index].SetActive(true);
+
     }
 
-    public void PressButton()
+    public void PressRight()
     {
-         int previousSelectedWeapon = selectedWeapon;
-        
-        //Get input to change the weapon
-        if (selectedWeapon >= transform.childCount - 1) 
-            selectedWeapon = 0;
-        else
-            selectedWeapon++;
+        //turn off the model, change the index, turn on the new model for the new index
 
-        if (selectedWeapon <= 0)
-            selectedWeapon = transform.childCount - 1;
-        else
-            selectedWeapon--;
+        // Toggle off the current model
+        gunList[index].SetActive(false);
 
-        if(previousSelectedWeapon != selectedWeapon)
-        {
-            SelectWeapon();
-        Debug.Log("pressed");
-    }
+        index++; 
+        if (index == gunList.Length) //if is less then 0
+            index = 0; //them bring me back to the end of the index and keep goind down - EX. the last index is 3 - so you do 0, 3, 2, 1, 0...
+
+        //Toggle on the new moddel
+        gunList[index].SetActive(true);
 
     }
 
+    public void ChangeScene()
+    {
+        PlayerPrefs.SetInt("GunSelected", index);
+        SceneManager.LoadScene("XR_Level1");
+    }
 
 }
 

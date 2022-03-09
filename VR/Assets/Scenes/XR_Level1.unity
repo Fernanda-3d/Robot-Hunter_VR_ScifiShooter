@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.013695012, g: 0.013151343, b: 0.01274718, a: 1}
+  m_IndirectSpecularColor: {r: 0.015946122, g: 0.015274356, b: 0.0147186285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -97,7 +97,8 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: c67b100c03176d844b78492c8023bc47,
+    type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -528,7 +529,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -2381,7 +2382,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -3088,7 +3089,7 @@ MonoBehaviour:
   gunpoint: {fileID: 757055765}
   impactParticle: {fileID: 8415271079842780030, guid: 3bcea7e63d1d22e4f8c037ad658c2600,
     type: 3}
-  trail: {fileID: 0}
+  trail: {fileID: 6713796929719106668, guid: 3fa5811e6cda2dc419915837d42523af, type: 3}
   hitSound: {fileID: 8300000, guid: afe5e031c5eca6c43b0427ff99d012b3, type: 3}
   gameManager: {fileID: 648598781}
   mask:
@@ -3649,6 +3650,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 423330960}
+  - component: {fileID: 423330959}
   m_Layer: 0
   m_Name: Gun Selection
   m_TagString: Untagged
@@ -3656,6 +3658,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &423330959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 423330958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7e4410a40242b84f8c3b0712046a993, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &423330960
 Transform:
   m_ObjectHideFlags: 0
@@ -5046,7 +5060,7 @@ MonoBehaviour:
   gunpoint: {fileID: 1539272489}
   impactParticle: {fileID: 8415271079842780030, guid: 3bcea7e63d1d22e4f8c037ad658c2600,
     type: 3}
-  trail: {fileID: 0}
+  trail: {fileID: 6713796929719106668, guid: 3fa5811e6cda2dc419915837d42523af, type: 3}
   hitSound: {fileID: 8300000, guid: afe5e031c5eca6c43b0427ff99d012b3, type: 3}
   gameManager: {fileID: 648598781}
   mask:
@@ -6541,6 +6555,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 911296314561834602, guid: 3c81b162a1af44348b8994f7040514d4,
         type: 3}
+      propertyPath: trail
+      value: 
+      objectReference: {fileID: 6713796929719106668, guid: 3fa5811e6cda2dc419915837d42523af,
+        type: 3}
+    - target: {fileID: 911296314561834602, guid: 3c81b162a1af44348b8994f7040514d4,
+        type: 3}
       propertyPath: bullet
       value: 
       objectReference: {fileID: 4191780443061374674, guid: 67ed02f2a41c65e4385fad2353378da6,
@@ -6966,9 +6986,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 993b11b04433b004cb248a05eac58f2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  size: {x: 50.41, y: 3.93, z: 20}
-  spawnRate: 2
-  increment: 0.05
+  size: {x: 25.95, y: 3.93, z: 13.53}
+  spawnRate: 0.5
   asteroidModel: {fileID: 4681696830588236750, guid: dbcfd42da84d8784b912633c0c7415f4,
     type: 3}
   asteroidParent: {fileID: 122301064}
@@ -8330,7 +8349,7 @@ MonoBehaviour:
   gunpoint: {fileID: 2099906038}
   impactParticle: {fileID: 8415271079842780030, guid: 3bcea7e63d1d22e4f8c037ad658c2600,
     type: 3}
-  trail: {fileID: 0}
+  trail: {fileID: 6713796929719106668, guid: 3fa5811e6cda2dc419915837d42523af, type: 3}
   hitSound: {fileID: 8300000, guid: afe5e031c5eca6c43b0427ff99d012b3, type: 3}
   gameManager: {fileID: 648598781}
   mask:
@@ -15630,7 +15649,7 @@ MonoBehaviour:
   gunpoint: {fileID: 2134214077}
   impactParticle: {fileID: 8415271079842780030, guid: 3bcea7e63d1d22e4f8c037ad658c2600,
     type: 3}
-  trail: {fileID: 0}
+  trail: {fileID: 6713796929719106668, guid: 3fa5811e6cda2dc419915837d42523af, type: 3}
   hitSound: {fileID: 8300000, guid: afe5e031c5eca6c43b0427ff99d012b3, type: 3}
   gameManager: {fileID: 648598781}
   mask:
@@ -16416,6 +16435,12 @@ PrefabInstance:
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 327286891}
+    - target: {fileID: 911296314561834602, guid: 3c81b162a1af44348b8994f7040514d4,
+        type: 3}
+      propertyPath: trail
+      value: 
+      objectReference: {fileID: 6713796929719106668, guid: 3fa5811e6cda2dc419915837d42523af,
+        type: 3}
     - target: {fileID: 911296314561834602, guid: 3c81b162a1af44348b8994f7040514d4,
         type: 3}
       propertyPath: gameManager
@@ -17914,7 +17939,7 @@ MonoBehaviour:
   gunpoint: {fileID: 914480194}
   impactParticle: {fileID: 8415271079842780030, guid: 3bcea7e63d1d22e4f8c037ad658c2600,
     type: 3}
-  trail: {fileID: 0}
+  trail: {fileID: 6713796929719106668, guid: 3fa5811e6cda2dc419915837d42523af, type: 3}
   hitSound: {fileID: 8300000, guid: afe5e031c5eca6c43b0427ff99d012b3, type: 3}
   gameManager: {fileID: 648598781}
   mask:
@@ -19146,7 +19171,7 @@ MonoBehaviour:
   gunpoint: {fileID: 882968637}
   impactParticle: {fileID: 8415271079842780030, guid: 3bcea7e63d1d22e4f8c037ad658c2600,
     type: 3}
-  trail: {fileID: 0}
+  trail: {fileID: 6713796929719106668, guid: 3fa5811e6cda2dc419915837d42523af, type: 3}
   hitSound: {fileID: 8300000, guid: afe5e031c5eca6c43b0427ff99d012b3, type: 3}
   gameManager: {fileID: 648598781}
   mask:
@@ -19702,7 +19727,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1691842303, guid: c7a3e935799be704b9ea8a1107b49189, type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1691842303, guid: c7a3e935799be704b9ea8a1107b49189, type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode

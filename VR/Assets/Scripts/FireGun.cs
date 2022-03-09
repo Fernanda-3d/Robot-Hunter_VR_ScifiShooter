@@ -35,6 +35,8 @@ public class FireGun : MonoBehaviour
         if(Physics.Raycast(gunpoint.position, gunpoint.forward, out hit, 1000, mask))
         {
             Debug.Log(hit.collider.name);
+            Transform newTrail = Instantiate(trail, gunpoint.position, Quaternion.identity);
+            newTrail.GetComponent<trailShoot>().destination = hit.point;
 
             if (hit.collider.GetComponent<Rigidbody>() != null)
             {
@@ -68,18 +70,20 @@ public class FireGun : MonoBehaviour
             }           
 
             //&& hit.collider.gameObject.tag != "Button"
-
-
-
-            //Transform newTrail = Instantiate(trail, gunpoint.position, Quaternion.identity);
-            // newTrail.GetComponent<trailShoot>().destination = hit.point;
+                      
             Instantiate(impactParticle, hit.point, Quaternion.identity);                  
 
            if (hit.collider.gameObject.tag != "Button")
             {
                 GameManager.AsteroidHit();
             }
-                   
+
+            if (hit.collider.gameObject.tag == "ChangeButton")
+            {
+                Debug.Log("Changing Gun");
+            }
+
+
         }
               
     }

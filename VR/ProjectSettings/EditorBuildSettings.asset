@@ -15,7 +15,10 @@ EditorBuildSettings:
     path: Assets/Scenes/Character/Character_Test.unity
     guid: 5242d1423ef11ae41abbca8b011fdbea
   - enabled: 1
-    path: Assets/Scenes/XR_Rig_Template.unity
+    path: Assets/Scenes/XR_Menu.unity
+    guid: 7f2df4cf47bf78d4fb4a12017b63301e
+  - enabled: 1
+    path: Assets/Scenes/XR_Level1.unity
     guid: 2df64b07f9a9be6419109e3aea9cb51b
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: f3d36b094c7e90a48bfeecc8253553a0,

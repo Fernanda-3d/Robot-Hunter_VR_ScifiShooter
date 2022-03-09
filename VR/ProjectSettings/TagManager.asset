@@ -19,6 +19,7 @@ TagManager:
   - CinemachineTarget
   - Button
   - Restart
+  - Changing Gun
   layers:
   - Default
   - TransparentFX

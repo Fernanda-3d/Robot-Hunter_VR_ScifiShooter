@@ -866,7 +866,7 @@ GameObject:
   - component: {fileID: 4158133114662427205}
   m_Layer: 0
   m_Name: Right Hand Model
-  m_TagString: Player
+  m_TagString: Changing Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

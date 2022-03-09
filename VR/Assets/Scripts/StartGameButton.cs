@@ -1,16 +1,20 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class StartGameButton : MonoBehaviour
 {
-    public GameManager gameManager;
-
+   
+    
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Laser"))
+        if (other.gameObject.CompareTag("Changing Gun"))
         {
-            gameManager.StartGame();
+            //ChangeGun();
+            
         }
     }
+
+   
 }

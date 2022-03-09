@@ -67,7 +67,9 @@ public class HandAnimationController : MonoBehaviour
                 //acess the animator component - control a value - grip animation
                 animatorController.SetFloat("Grip", gripValue);
             }
-        }
+
+            
+                    }
        
     }
 }

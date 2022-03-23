@@ -5,11 +5,15 @@ using UnityEngine;
 public class FireGun : MonoBehaviour
 {
 
-    [SerializeField] GameObject gunVFX;
+    [SerializeField] GameObject gunVFX; 
+    [SerializeField] List<GameObject> vfx = new List<GameObject>();
     [SerializeField] Transform gunpoint;
 
+   
+    private GameObject effectToSpawn;
+
     [SerializeField] GameObject impactParticle;
-    public Transform trail;
+   
 
     AudioSource audioSource;
     public AudioClip hitSound;
@@ -24,19 +28,22 @@ public class FireGun : MonoBehaviour
     private void Start()
     {
         audioSource = GetComponent<AudioSource>();
+        effectToSpawn = vfx[0];
     }
 
     public void Fire()
     {
        
         //instantiate the particles
+        GameObject _projectileVFX = Instantiate(effectToSpawn, gunpoint.position, gunpoint.rotation);
         GameObject _gunVFX = Instantiate(gunVFX, gunpoint.position, gunpoint.rotation);
 
-        if(Physics.Raycast(gunpoint.position, gunpoint.forward, out hit, 1000, mask))
+        
+
+        if (Physics.Raycast(gunpoint.position, gunpoint.forward, out hit, 1000, mask))
         {
             Debug.Log(hit.collider.name);
-            Transform newTrail = Instantiate(trail, gunpoint.position, Quaternion.identity);
-            newTrail.GetComponent<trailShoot>().destination = hit.point;
+            
 
             if (hit.collider.GetComponent<Rigidbody>() != null)
             {
@@ -85,7 +92,9 @@ public class FireGun : MonoBehaviour
 
 
         }
-              
+
+        
+
     }
 
     private void Update()

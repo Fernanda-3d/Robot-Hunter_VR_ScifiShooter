@@ -9688,50 +9688,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2556523160164220774}
     m_Modifications:
-    - target: {fileID: 1124653019261503714, guid: dc3a3dba1e335664c85d8df0a225e8a8,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 01491354fd254bb4cb774d72e1926653, type: 2}
     - target: {fileID: 3240222399566279681, guid: dc3a3dba1e335664c85d8df0a225e8a8,
         type: 3}
       propertyPath: m_Name
       value: Rock.003
       objectReference: {fileID: 0}
-    - target: {fileID: 3240222399566279681, guid: dc3a3dba1e335664c85d8df0a225e8a8,
-        type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3240222399566279681, guid: dc3a3dba1e335664c85d8df0a225e8a8,
-        type: 3}
-      propertyPath: m_TagString
-      value: Asteroid
-      objectReference: {fileID: 0}
-    - target: {fileID: 4550517658065255622, guid: dc3a3dba1e335664c85d8df0a225e8a8,
-        type: 3}
-      propertyPath: m_Radius
-      value: 2.3
-      objectReference: {fileID: 0}
     - target: {fileID: 9081141136468545864, guid: dc3a3dba1e335664c85d8df0a225e8a8,
         type: 3}
       propertyPath: m_RootOrder
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9081141136468545864, guid: dc3a3dba1e335664c85d8df0a225e8a8,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 9081141136468545864, guid: dc3a3dba1e335664c85d8df0a225e8a8,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 9081141136468545864, guid: dc3a3dba1e335664c85d8df0a225e8a8,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 9081141136468545864, guid: dc3a3dba1e335664c85d8df0a225e8a8,
         type: 3}

@@ -3086,10 +3086,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gunVFX: {fileID: 8415271079842780030, guid: 3bcea7e63d1d22e4f8c037ad658c2600, type: 3}
+  vfx:
+  - {fileID: 4638200627780479870, guid: 1d1628301e6ce174faf577d4e04b2da3, type: 3}
   gunpoint: {fileID: 757055765}
   impactParticle: {fileID: 8415271079842780030, guid: 3bcea7e63d1d22e4f8c037ad658c2600,
     type: 3}
-  trail: {fileID: 6713796929719106668, guid: 3fa5811e6cda2dc419915837d42523af, type: 3}
   hitSound: {fileID: 8300000, guid: afe5e031c5eca6c43b0427ff99d012b3, type: 3}
   gameManager: {fileID: 648598781}
   mask:
@@ -5057,10 +5058,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gunVFX: {fileID: 8415271079842780030, guid: 3bcea7e63d1d22e4f8c037ad658c2600, type: 3}
+  vfx:
+  - {fileID: 4638200627780479870, guid: 35aa4504a1192534388787af9cf2a366, type: 3}
   gunpoint: {fileID: 1539272489}
   impactParticle: {fileID: 8415271079842780030, guid: 3bcea7e63d1d22e4f8c037ad658c2600,
     type: 3}
-  trail: {fileID: 6713796929719106668, guid: 3fa5811e6cda2dc419915837d42523af, type: 3}
   hitSound: {fileID: 8300000, guid: afe5e031c5eca6c43b0427ff99d012b3, type: 3}
   gameManager: {fileID: 648598781}
   mask:
@@ -5589,6 +5591,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1920857923}
     m_Modifications:
+    - target: {fileID: 1124653019261503714, guid: dc3a3dba1e335664c85d8df0a225e8a8,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 60708123ba24c53488fa975549c14295, type: 2}
     - target: {fileID: 3240222399566279681, guid: dc3a3dba1e335664c85d8df0a225e8a8,
         type: 3}
       propertyPath: m_Name
@@ -7239,6 +7246,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1920857923}
     m_Modifications:
+    - target: {fileID: 1124653019261503714, guid: dc3a3dba1e335664c85d8df0a225e8a8,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 60708123ba24c53488fa975549c14295, type: 2}
     - target: {fileID: 3240222399566279681, guid: dc3a3dba1e335664c85d8df0a225e8a8,
         type: 3}
       propertyPath: m_Name
@@ -7619,6 +7631,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1920857923}
     m_Modifications:
+    - target: {fileID: 1124653019261503714, guid: dc3a3dba1e335664c85d8df0a225e8a8,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 60708123ba24c53488fa975549c14295, type: 2}
     - target: {fileID: 3240222399566279681, guid: dc3a3dba1e335664c85d8df0a225e8a8,
         type: 3}
       propertyPath: m_Name
@@ -8346,10 +8363,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gunVFX: {fileID: 8415271079842780030, guid: 3bcea7e63d1d22e4f8c037ad658c2600, type: 3}
+  vfx:
+  - {fileID: 4638200627780479870, guid: 35aa4504a1192534388787af9cf2a366, type: 3}
   gunpoint: {fileID: 2099906038}
   impactParticle: {fileID: 8415271079842780030, guid: 3bcea7e63d1d22e4f8c037ad658c2600,
     type: 3}
-  trail: {fileID: 6713796929719106668, guid: 3fa5811e6cda2dc419915837d42523af, type: 3}
   hitSound: {fileID: 8300000, guid: afe5e031c5eca6c43b0427ff99d012b3, type: 3}
   gameManager: {fileID: 648598781}
   mask:
@@ -9610,6 +9628,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1920857923}
     m_Modifications:
+    - target: {fileID: 1124653019261503714, guid: dc3a3dba1e335664c85d8df0a225e8a8,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 60708123ba24c53488fa975549c14295, type: 2}
     - target: {fileID: 3240222399566279681, guid: dc3a3dba1e335664c85d8df0a225e8a8,
         type: 3}
       propertyPath: m_Name
@@ -9705,6 +9728,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1920857923}
     m_Modifications:
+    - target: {fileID: 1124653019261503714, guid: dc3a3dba1e335664c85d8df0a225e8a8,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 60708123ba24c53488fa975549c14295, type: 2}
     - target: {fileID: 3240222399566279681, guid: dc3a3dba1e335664c85d8df0a225e8a8,
         type: 3}
       propertyPath: m_Name
@@ -10309,6 +10337,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1920857923}
     m_Modifications:
+    - target: {fileID: 1124653019261503714, guid: dc3a3dba1e335664c85d8df0a225e8a8,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 60708123ba24c53488fa975549c14295, type: 2}
     - target: {fileID: 3240222399566279681, guid: dc3a3dba1e335664c85d8df0a225e8a8,
         type: 3}
       propertyPath: m_Name
@@ -13213,6 +13246,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1920857923}
     m_Modifications:
+    - target: {fileID: 1124653019261503714, guid: dc3a3dba1e335664c85d8df0a225e8a8,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 60708123ba24c53488fa975549c14295, type: 2}
     - target: {fileID: 3240222399566279681, guid: dc3a3dba1e335664c85d8df0a225e8a8,
         type: 3}
       propertyPath: m_Name
@@ -13341,6 +13379,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1920857923}
     m_Modifications:
+    - target: {fileID: 1124653019261503714, guid: dc3a3dba1e335664c85d8df0a225e8a8,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 60708123ba24c53488fa975549c14295, type: 2}
     - target: {fileID: 3240222399566279681, guid: dc3a3dba1e335664c85d8df0a225e8a8,
         type: 3}
       propertyPath: m_Name
@@ -14434,6 +14477,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1920857923}
     m_Modifications:
+    - target: {fileID: 1124653019261503714, guid: dc3a3dba1e335664c85d8df0a225e8a8,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 60708123ba24c53488fa975549c14295, type: 2}
     - target: {fileID: 3240222399566279681, guid: dc3a3dba1e335664c85d8df0a225e8a8,
         type: 3}
       propertyPath: m_Name
@@ -15646,10 +15694,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gunVFX: {fileID: 8415271079842780030, guid: 3bcea7e63d1d22e4f8c037ad658c2600, type: 3}
+  vfx:
+  - {fileID: 4638200627780479870, guid: a506c27311ee69942a933aea99625898, type: 3}
   gunpoint: {fileID: 2134214077}
   impactParticle: {fileID: 8415271079842780030, guid: 3bcea7e63d1d22e4f8c037ad658c2600,
     type: 3}
-  trail: {fileID: 6713796929719106668, guid: 3fa5811e6cda2dc419915837d42523af, type: 3}
   hitSound: {fileID: 8300000, guid: afe5e031c5eca6c43b0427ff99d012b3, type: 3}
   gameManager: {fileID: 648598781}
   mask:
@@ -15798,6 +15847,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1920857923}
     m_Modifications:
+    - target: {fileID: 1124653019261503714, guid: dc3a3dba1e335664c85d8df0a225e8a8,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 60708123ba24c53488fa975549c14295, type: 2}
     - target: {fileID: 3240222399566279681, guid: dc3a3dba1e335664c85d8df0a225e8a8,
         type: 3}
       propertyPath: m_Name
@@ -17936,10 +17990,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gunVFX: {fileID: 8415271079842780030, guid: 3bcea7e63d1d22e4f8c037ad658c2600, type: 3}
+  vfx:
+  - {fileID: 4638200627780479870, guid: a506c27311ee69942a933aea99625898, type: 3}
   gunpoint: {fileID: 914480194}
   impactParticle: {fileID: 8415271079842780030, guid: 3bcea7e63d1d22e4f8c037ad658c2600,
     type: 3}
-  trail: {fileID: 6713796929719106668, guid: 3fa5811e6cda2dc419915837d42523af, type: 3}
   hitSound: {fileID: 8300000, guid: afe5e031c5eca6c43b0427ff99d012b3, type: 3}
   gameManager: {fileID: 648598781}
   mask:
@@ -18310,6 +18365,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1920857923}
     m_Modifications:
+    - target: {fileID: 1124653019261503714, guid: dc3a3dba1e335664c85d8df0a225e8a8,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 60708123ba24c53488fa975549c14295, type: 2}
     - target: {fileID: 3240222399566279681, guid: dc3a3dba1e335664c85d8df0a225e8a8,
         type: 3}
       propertyPath: m_Name
@@ -18602,6 +18662,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1920857923}
     m_Modifications:
+    - target: {fileID: 1124653019261503714, guid: dc3a3dba1e335664c85d8df0a225e8a8,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 60708123ba24c53488fa975549c14295, type: 2}
     - target: {fileID: 3240222399566279681, guid: dc3a3dba1e335664c85d8df0a225e8a8,
         type: 3}
       propertyPath: m_Name
@@ -18882,6 +18947,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1920857923}
     m_Modifications:
+    - target: {fileID: 1124653019261503714, guid: dc3a3dba1e335664c85d8df0a225e8a8,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 60708123ba24c53488fa975549c14295, type: 2}
     - target: {fileID: 3240222399566279681, guid: dc3a3dba1e335664c85d8df0a225e8a8,
         type: 3}
       propertyPath: m_Name
@@ -19168,10 +19238,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gunVFX: {fileID: 8415271079842780030, guid: 3bcea7e63d1d22e4f8c037ad658c2600, type: 3}
+  vfx:
+  - {fileID: 4638200627780479870, guid: 1d1628301e6ce174faf577d4e04b2da3, type: 3}
   gunpoint: {fileID: 882968637}
   impactParticle: {fileID: 8415271079842780030, guid: 3bcea7e63d1d22e4f8c037ad658c2600,
     type: 3}
-  trail: {fileID: 6713796929719106668, guid: 3fa5811e6cda2dc419915837d42523af, type: 3}
   hitSound: {fileID: 8300000, guid: afe5e031c5eca6c43b0427ff99d012b3, type: 3}
   gameManager: {fileID: 648598781}
   mask:

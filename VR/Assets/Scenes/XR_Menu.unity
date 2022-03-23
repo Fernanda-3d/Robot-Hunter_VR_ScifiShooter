@@ -2840,10 +2840,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gunVFX: {fileID: 8415271079842780030, guid: 3bcea7e63d1d22e4f8c037ad658c2600, type: 3}
+  vfx: []
   gunpoint: {fileID: 757055765}
   impactParticle: {fileID: 8415271079842780030, guid: 3bcea7e63d1d22e4f8c037ad658c2600,
     type: 3}
-  trail: {fileID: 6713796929719106668, guid: 3fa5811e6cda2dc419915837d42523af, type: 3}
   hitSound: {fileID: 8300000, guid: afe5e031c5eca6c43b0427ff99d012b3, type: 3}
   gameManager: {fileID: 0}
   mask:
@@ -4671,10 +4671,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gunVFX: {fileID: 8415271079842780030, guid: 3bcea7e63d1d22e4f8c037ad658c2600, type: 3}
+  vfx: []
   gunpoint: {fileID: 1539272489}
   impactParticle: {fileID: 8415271079842780030, guid: 3bcea7e63d1d22e4f8c037ad658c2600,
     type: 3}
-  trail: {fileID: 6713796929719106668, guid: 3fa5811e6cda2dc419915837d42523af, type: 3}
   hitSound: {fileID: 8300000, guid: afe5e031c5eca6c43b0427ff99d012b3, type: 3}
   gameManager: {fileID: 0}
   mask:
@@ -7935,10 +7935,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gunVFX: {fileID: 8415271079842780030, guid: 3bcea7e63d1d22e4f8c037ad658c2600, type: 3}
+  vfx: []
   gunpoint: {fileID: 2099906038}
   impactParticle: {fileID: 8415271079842780030, guid: 3bcea7e63d1d22e4f8c037ad658c2600,
     type: 3}
-  trail: {fileID: 6713796929719106668, guid: 3fa5811e6cda2dc419915837d42523af, type: 3}
   hitSound: {fileID: 8300000, guid: afe5e031c5eca6c43b0427ff99d012b3, type: 3}
   gameManager: {fileID: 0}
   mask:
@@ -18116,10 +18116,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gunVFX: {fileID: 8415271079842780030, guid: 3bcea7e63d1d22e4f8c037ad658c2600, type: 3}
+  vfx: []
   gunpoint: {fileID: 914480194}
   impactParticle: {fileID: 8415271079842780030, guid: 3bcea7e63d1d22e4f8c037ad658c2600,
     type: 3}
-  trail: {fileID: 6713796929719106668, guid: 3fa5811e6cda2dc419915837d42523af, type: 3}
   hitSound: {fileID: 8300000, guid: afe5e031c5eca6c43b0427ff99d012b3, type: 3}
   gameManager: {fileID: 0}
   mask:
@@ -19393,10 +19393,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gunVFX: {fileID: 8415271079842780030, guid: 3bcea7e63d1d22e4f8c037ad658c2600, type: 3}
+  vfx: []
   gunpoint: {fileID: 882968637}
   impactParticle: {fileID: 8415271079842780030, guid: 3bcea7e63d1d22e4f8c037ad658c2600,
     type: 3}
-  trail: {fileID: 6713796929719106668, guid: 3fa5811e6cda2dc419915837d42523af, type: 3}
   hitSound: {fileID: 8300000, guid: afe5e031c5eca6c43b0427ff99d012b3, type: 3}
   gameManager: {fileID: 0}
   mask:

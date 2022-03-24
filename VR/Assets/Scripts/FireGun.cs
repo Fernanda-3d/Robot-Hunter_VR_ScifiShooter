@@ -56,7 +56,11 @@ public class FireGun : MonoBehaviour
             {
                 Destroy(hit.collider.gameObject);
             }
-            
+            if (hit.collider.gameObject.tag == "Enemy")
+            {
+                Destroy(hit.collider.gameObject);
+            }
+
             if (hit.collider.gameObject.tag == "Button")
             {
                 if (hit.collider.name == "StartCollisionDetect")
@@ -71,8 +75,7 @@ public class FireGun : MonoBehaviour
                     audioSource.PlayOneShot(hitSound);
                     Debug.Log("I'm hitting the Restart");
                     gameManager.RestartGame();
-                }
-                                  
+                }                                
 
             }           
 

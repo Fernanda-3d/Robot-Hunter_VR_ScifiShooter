@@ -124,6 +124,56 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &12537714
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 12537716}
+  - component: {fileID: 12537715}
+  m_Layer: 0
+  m_Name: EnemySpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &12537715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 12537714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5ba5e141b05c3d4d8fd6457fdc6a42f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  size: {x: 30, y: 8, z: 10}
+  spawnRate: 1
+  enemies:
+  - {fileID: 1984708730161477251, guid: f409429cd032e354c9e38cf9ad715513, type: 3}
+  - {fileID: 2417929699697031955, guid: 71419c46a4a040b46ac8000150539828, type: 3}
+  - {fileID: 7121323208352541749, guid: 816dafc0164e5dd49998a99cc6375cbf, type: 3}
+  enemyCount: 0
+--- !u!4 &12537716
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 12537714}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 4.6, z: 34.56}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &19924454 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7386754054902273867, guid: 260a3f8aeb871c049bc7df3ca70cc14a,
@@ -3085,11 +3135,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c623b99c2f43ecd4f965370877cc1c3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gunVFX: {fileID: 8415271079842780030, guid: 3bcea7e63d1d22e4f8c037ad658c2600, type: 3}
+  gunVFX: {fileID: 8415271079842780030, guid: 30ead78455ad6724796e7f878c290254, type: 3}
   vfx:
   - {fileID: 4638200627780479870, guid: 1d1628301e6ce174faf577d4e04b2da3, type: 3}
   gunpoint: {fileID: 757055765}
-  impactParticle: {fileID: 8415271079842780030, guid: 3bcea7e63d1d22e4f8c037ad658c2600,
+  impactParticle: {fileID: 8415271079842780030, guid: 30ead78455ad6724796e7f878c290254,
     type: 3}
   hitSound: {fileID: 8300000, guid: afe5e031c5eca6c43b0427ff99d012b3, type: 3}
   gameManager: {fileID: 648598781}
@@ -8362,11 +8412,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c623b99c2f43ecd4f965370877cc1c3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gunVFX: {fileID: 8415271079842780030, guid: 3bcea7e63d1d22e4f8c037ad658c2600, type: 3}
+  gunVFX: {fileID: 8415271079842780030, guid: 3eee0b41118e42e4fbc3dd83cbc01476, type: 3}
   vfx:
   - {fileID: 4638200627780479870, guid: 35aa4504a1192534388787af9cf2a366, type: 3}
   gunpoint: {fileID: 2099906038}
-  impactParticle: {fileID: 8415271079842780030, guid: 3bcea7e63d1d22e4f8c037ad658c2600,
+  impactParticle: {fileID: 8415271079842780030, guid: 3eee0b41118e42e4fbc3dd83cbc01476,
     type: 3}
   hitSound: {fileID: 8300000, guid: afe5e031c5eca6c43b0427ff99d012b3, type: 3}
   gameManager: {fileID: 648598781}
@@ -19237,11 +19287,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c623b99c2f43ecd4f965370877cc1c3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gunVFX: {fileID: 8415271079842780030, guid: 3bcea7e63d1d22e4f8c037ad658c2600, type: 3}
+  gunVFX: {fileID: 8415271079842780030, guid: 30ead78455ad6724796e7f878c290254, type: 3}
   vfx:
   - {fileID: 4638200627780479870, guid: 1d1628301e6ce174faf577d4e04b2da3, type: 3}
   gunpoint: {fileID: 882968637}
-  impactParticle: {fileID: 8415271079842780030, guid: 3bcea7e63d1d22e4f8c037ad658c2600,
+  impactParticle: {fileID: 8415271079842780030, guid: 30ead78455ad6724796e7f878c290254,
     type: 3}
   hitSound: {fileID: 8300000, guid: afe5e031c5eca6c43b0427ff99d012b3, type: 3}
   gameManager: {fileID: 648598781}

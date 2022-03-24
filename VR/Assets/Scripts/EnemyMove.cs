@@ -6,13 +6,14 @@ public class EnemyMove : MonoBehaviour
 {
     private GameObject target;
     public float t;
-    public float speed = 3f;
+    public float speed;
 
 
 
     // Start is called before the first frame update
     void Start()
     {
+        speed = Random.Range(2f, 5f);
         target = GameObject.FindGameObjectWithTag("MainCamera");
     }
 

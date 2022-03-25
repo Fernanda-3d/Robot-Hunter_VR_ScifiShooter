@@ -93,10 +93,7 @@ public class FireGun : MonoBehaviour
                 Debug.Log("Changing Gun");
             }
 
-
-        }
-
-        
+        }              
 
     }
 

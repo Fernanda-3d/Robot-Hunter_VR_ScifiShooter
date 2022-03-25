@@ -118,6 +118,9 @@
     "m_GroupDatas": [
         {
             "m_Id": "ca6e7cb2d0c64ce6824cb5c683aa3aad"
+        },
+        {
+            "m_Id": "faf2a1ab8dca41f1a84b361f3c031f17"
         }
     ],
     "m_StickyNoteDatas": [],
@@ -558,8 +561,8 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1123.9998779296875,
-            "y": 850.6665649414063,
+            "x": -1136.66650390625,
+            "y": 1200.6666259765625,
             "width": 147.3332977294922,
             "height": 33.999996185302737
         }
@@ -1042,6 +1045,8 @@
         "m_GuidSerialized": "024fce57-4f3b-4f54-b7c3-a8abf943624c"
     },
     "m_Name": "FresnelColor",
+    "m_DefaultRefNameVersion": 0,
+    "m_RefNameGeneratedByDisplayName": "",
     "m_DefaultReferenceName": "Color_2cd704c346cb49f5ad49826f2eed2dec",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
@@ -1180,6 +1185,8 @@
         "m_GuidSerialized": "1f4bc3a9-76f4-4453-af45-f0b4d5850b02"
     },
     "m_Name": "MainTexture",
+    "m_DefaultRefNameVersion": 0,
+    "m_RefNameGeneratedByDisplayName": "",
     "m_DefaultReferenceName": "Texture2D_3888c99d07024d7dad401bbb92d6981b",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
@@ -1240,9 +1247,9 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -873.333251953125,
-            "y": 292.66668701171877,
-            "width": 145.3332977294922,
+            "x": -760.6666259765625,
+            "y": 292.0,
+            "width": 145.33335876464845,
             "height": 33.999996185302737
         }
     },
@@ -1307,16 +1314,16 @@
     "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
     "m_ObjectId": "3fc42dc319f34cdb9813dad2f0fa38e0",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "faf2a1ab8dca41f1a84b361f3c031f17"
     },
     "m_Name": "Property",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1509.333251953125,
-            "y": 784.6665649414063,
-            "width": 154.66673278808595,
+            "x": -1600.6666259765625,
+            "y": 919.9999389648438,
+            "width": 154.66661071777345,
             "height": 33.999996185302737
         }
     },
@@ -1600,9 +1607,9 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -920.6666259765625,
-            "y": 705.333251953125,
-            "width": 192.66668701171876,
+            "x": -949.333251953125,
+            "y": 855.333251953125,
+            "width": 193.3332977294922,
             "height": 142.0
         }
     },
@@ -1821,10 +1828,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -637.333251953125,
-            "y": 851.333251953125,
-            "width": 207.9999542236328,
-            "height": 301.9999694824219
+            "x": -684.0000610351563,
+            "y": 845.9999389648438,
+            "width": 207.99998474121095,
+            "height": 301.9999084472656
         }
     },
     "m_Slots": [
@@ -1868,6 +1875,8 @@
         "m_GuidSerialized": "79611789-c4ff-4a68-aa4f-88c7ee7591c3"
     },
     "m_Name": "VoronoiDissolve",
+    "m_DefaultRefNameVersion": 0,
+    "m_RefNameGeneratedByDisplayName": "",
     "m_DefaultReferenceName": "Vector1_9717e0447f704253a49bfd47467919f8",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
@@ -1895,10 +1904,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1157.333251953125,
-            "y": 422.0,
+            "x": -1022.6665649414063,
+            "y": 469.9999694824219,
             "width": 147.33335876464845,
-            "height": 33.999996185302737
+            "height": 34.00002670288086
         }
     },
     "m_Slots": [
@@ -1985,15 +1994,15 @@
     "m_Type": "UnityEditor.ShaderGraph.TimeNode",
     "m_ObjectId": "9de57eafcb6c4b7d8351c9fa2e890885",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "faf2a1ab8dca41f1a84b361f3c031f17"
     },
     "m_Name": "Time",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1528.66650390625,
-            "y": 833.9999389648438,
+            "x": -1620.0,
+            "y": 969.9998779296875,
             "width": 127.99999237060547,
             "height": 173.3332977294922
         }
@@ -2292,6 +2301,8 @@
         "m_GuidSerialized": "53458632-be81-43c3-b50a-7fcba8244430"
     },
     "m_Name": "VoronoiColor",
+    "m_DefaultRefNameVersion": 0,
+    "m_RefNameGeneratedByDisplayName": "",
     "m_DefaultReferenceName": "Color_b9d9f0be577542569b87d140563377b4",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
@@ -2364,6 +2375,8 @@
         "m_GuidSerialized": "414b67e7-924b-4ba7-a4f4-e566e107ab9e"
     },
     "m_Name": "FresnelPower",
+    "m_DefaultRefNameVersion": 0,
+    "m_RefNameGeneratedByDisplayName": "",
     "m_DefaultReferenceName": "Vector1_bcc51d16b0de47818f5dffeac0d646b1",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
@@ -2590,17 +2603,17 @@
     "m_Type": "UnityEditor.ShaderGraph.MultiplyNode",
     "m_ObjectId": "d749f7d93e154f2699c5d9b68bb2d642",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "faf2a1ab8dca41f1a84b361f3c031f17"
     },
     "m_Name": "Multiply",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1331.333251953125,
-            "y": 784.6665649414063,
-            "width": 129.99998474121095,
-            "height": 117.99999237060547
+            "x": -1422.6666259765625,
+            "y": 919.9999389648438,
+            "width": 130.6666259765625,
+            "height": 117.99993133544922
         }
     },
     "m_Slots": [
@@ -2957,6 +2970,8 @@
         "m_GuidSerialized": "519e598f-119d-4b7b-ac7b-09d922d590bd"
     },
     "m_Name": "MainColor",
+    "m_DefaultRefNameVersion": 0,
+    "m_RefNameGeneratedByDisplayName": "",
     "m_DefaultReferenceName": "Color_ef766e66a5024a1da7f3c1c691cdf8e3",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
@@ -2981,6 +2996,8 @@
         "m_GuidSerialized": "a534de45-140c-4d0d-b5d4-529a8a2505ba"
     },
     "m_Name": "VoronoiSpeed",
+    "m_DefaultRefNameVersion": 0,
+    "m_RefNameGeneratedByDisplayName": "",
     "m_DefaultReferenceName": "Vector2_efdef61b53d6484e8eb48465a5fc29da",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
@@ -3001,16 +3018,16 @@
     "m_Type": "UnityEditor.ShaderGraph.TilingAndOffsetNode",
     "m_ObjectId": "f05de8426e6b46f3881ce05db9a3fd65",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "faf2a1ab8dca41f1a84b361f3c031f17"
     },
     "m_Name": "Tiling And Offset",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1157.333251953125,
-            "y": 663.333251953125,
-            "width": 154.6666717529297,
+            "x": -1248.6666259765625,
+            "y": 797.9999389648438,
+            "width": 155.333251953125,
             "height": 142.0
         }
     },
@@ -3098,6 +3115,8 @@
         "m_GuidSerialized": "751c3a47-fd31-434b-88c5-b5dee4b42aef"
     },
     "m_Name": "VoronoiScale",
+    "m_DefaultRefNameVersion": 0,
+    "m_RefNameGeneratedByDisplayName": "",
     "m_DefaultReferenceName": "Vector1_f59c74bbd70c4888beec53db76215dca",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
@@ -3125,8 +3144,8 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -857.333251953125,
-            "y": 916.66650390625,
+            "x": -875.3333740234375,
+            "y": 1125.9998779296875,
             "width": 164.66661071777345,
             "height": 33.999996185302737
         }
@@ -3145,6 +3164,17 @@
     },
     "m_Property": {
         "m_Id": "9717e0447f704253a49bfd47467919f8"
+    }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.GroupData",
+    "m_ObjectId": "faf2a1ab8dca41f1a84b361f3c031f17",
+    "m_Title": "Scrolling effect",
+    "m_Position": {
+        "x": -1645.3333740234375,
+        "y": 739.333251953125
     }
 }
 

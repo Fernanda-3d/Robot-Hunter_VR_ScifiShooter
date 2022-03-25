@@ -15,6 +15,8 @@ public class EnemyMove : MonoBehaviour
     {
         speed = Random.Range(2f, 5f);
         target = GameObject.FindGameObjectWithTag("MainCamera");
+        
+
     }
 
     // Update is called once per frame
@@ -23,5 +25,6 @@ public class EnemyMove : MonoBehaviour
         Vector3 a = transform.position;
         Vector3 b = target.transform.position;
         transform.position = Vector3.MoveTowards(a, b, speed * Time.deltaTime);
+       
     }
 }

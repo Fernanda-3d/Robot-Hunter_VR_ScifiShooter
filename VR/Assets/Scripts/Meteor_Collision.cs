@@ -4,23 +4,23 @@ using UnityEngine;
 
 public class Meteor_Collision : MonoBehaviour
 {
-    public float speed;
-    public GameObject impactPrefab;
-    public List<GameObject> trails;
+    public float speed; //speed of the asteroid falling
+    public GameObject impactPrefab; //mesh that is going to be instantiated when the asteroid hits the ground
+    public List<GameObject> trails; //smoke trails effect
 
        Rigidbody rb;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
-        speed = Random.Range(2f, 7f);
+        speed = Random.Range(2f, 7f); //get a random speed on asteroids falling
     }
 
     private void FixedUpdate()
     {
         if(speed != 0 && rb != null)
         {
-            rb.position += transform.forward * (speed * Time.deltaTime);
+            rb.position += transform.forward * (speed * Time.deltaTime); //make it fall forwards
         }
     }
 
@@ -28,7 +28,7 @@ public class Meteor_Collision : MonoBehaviour
     {
         if (collision.gameObject.tag == "ground")
         {
-            speed = 0;
+            speed = 0; //when then asteroid hits the floor stop the speed
 
             ContactPoint contact = collision.contacts[0];
             Quaternion rot = Quaternion.FromToRotation(Vector3.up, contact.normal);
@@ -40,7 +40,7 @@ public class Meteor_Collision : MonoBehaviour
                 Destroy(impactVFX, 5f);
             }
 
-            if (trails.Count > 0)
+            if (trails.Count > 0) //make the trails not desappear instantly when the asteroid is destroyed, but wait until the particles finish playing
             {
                 for (int i = 0; i < trails.Count; i++)
                 {

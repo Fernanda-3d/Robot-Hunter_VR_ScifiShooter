@@ -20,6 +20,7 @@ TagManager:
   - Button
   - Restart
   - Changing Gun
+  - TargetToLook
   layers:
   - Default
   - TransparentFX

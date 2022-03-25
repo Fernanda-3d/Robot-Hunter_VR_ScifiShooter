@@ -48,8 +48,8 @@ public class Enemy_Instantiate : MonoBehaviour
                                                                   Random.Range(-size.z / 2, size.z / 2));
 
             GameObject enemyInst = Instantiate(enemies[UnityEngine.Random.Range(0,3)], spawnPoint, Quaternion.Euler(90,180,0));
+            
 
-          
             yield return new WaitForSeconds(1f);
             enemyCount += 1;
 

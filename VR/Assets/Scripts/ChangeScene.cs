@@ -11,4 +11,9 @@ public class ChangeScene : MonoBehaviour
     {
         SceneManager.LoadScene("XR_SecondScene");
     }
+
+    public void PressStart()
+    {
+        SceneManager.LoadScene("XR_FirstScene");
+    }
 }

@@ -21,7 +21,7 @@ public class PressButton_Trigger : MonoBehaviour
     {
         if(!isPressed)
         {
-            button.transform.localPosition = new Vector3(0, 0.4f, 0);
+            button.transform.localPosition = new Vector3(0, 0.46f, 0);
             presser = other.gameObject;
             OnPress.Invoke();
             sound.Play();

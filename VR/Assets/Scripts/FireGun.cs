@@ -9,7 +9,8 @@ public class FireGun : MonoBehaviour
     [SerializeField] List<GameObject> vfx = new List<GameObject>();
     [SerializeField] Transform gunpoint;
 
-   
+    [SerializeField] GameObject enemydeathVFX;
+
     private GameObject effectToSpawn;
 
     [SerializeField] GameObject impactParticle;
@@ -58,8 +59,9 @@ public class FireGun : MonoBehaviour
             }
             if (hit.collider.gameObject.tag == "Enemy")
             {
+                Instantiate(enemydeathVFX, hit.collider.transform.position, Quaternion.identity);
                 Destroy(hit.collider.gameObject);
-            }
+            } 
 
             if (hit.collider.gameObject.tag == "Button")
             {

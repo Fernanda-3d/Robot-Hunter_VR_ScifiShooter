@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -45,17 +46,30 @@ public class GameManager : MonoBehaviour
 
             sliderCurrentFillAmount = sliderImg.fillAmount;
 
-            if(sliderCurrentFillAmount <= 0)
+          /*  if(sliderCurrentFillAmount <= 0)
+            {
+               GameOver();
+            } */
+        } 
+
+        if (eGameStatus == GameState.Playing)
+        {
+            if(LifeController.health < 1)
             {
                 GameOver();
             }
         }
+
     }
 
     private void GameOver()
     {
         eGameStatus = GameState.GameOver; //this will automatically stop the time and stop the points
         onGameOver.Invoke();
+
+        Invoke("RestartGame", 4f);
+
+        
     }
 
     public static void AsteroidHit()
@@ -78,12 +92,14 @@ public class GameManager : MonoBehaviour
     }
 
     public void RestartGame()
-    {        
-        onGameReset.Invoke();
+    {
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(currentSceneIndex);
+        /* onGameReset.Invoke();
 
-        sliderCurrentFillAmount = 1f;
-        playerScore = 0;
+         sliderCurrentFillAmount = 1f;
+         playerScore = 0; */
 
-               
+
     }
 }

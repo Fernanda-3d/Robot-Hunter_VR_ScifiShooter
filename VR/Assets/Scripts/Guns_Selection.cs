@@ -1,4 +1,4 @@
-using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -7,11 +7,14 @@ public class Guns_Selection : MonoBehaviour
     //get reference of the objects
     private GameObject[] gunList;
     
-    private int index; 
+    private int index;
 
-
+    public GameObject timeline;
+   
     private void Start()
     {
+        timeline.SetActive(false);
+
         //this is getting the gun index that was selected in the menu scene to load in the main scene
         index = PlayerPrefs.GetInt("GunSelected");
 
@@ -68,8 +71,16 @@ public class Guns_Selection : MonoBehaviour
     public void ChangeScene()
     {
         PlayerPrefs.SetInt("GunSelected", index);
+
+        timeline.SetActive(true);
+
+    }
+
+    public void ChangeToGame()
+    {
         SceneManager.LoadScene("XR_Level1");
     }
+     
 
 }
 

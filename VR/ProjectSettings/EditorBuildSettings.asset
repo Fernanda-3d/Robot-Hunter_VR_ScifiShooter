@@ -14,9 +14,18 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Character/Character_Test.unity
     guid: 5242d1423ef11ae41abbca8b011fdbea
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/XR_Menu.unity
     guid: 7f2df4cf47bf78d4fb4a12017b63301e
+  - enabled: 1
+    path: Assets/Scenes/XR_MainMenu.unity
+    guid: cdf370a2192661645994e27e5f258e15
+  - enabled: 1
+    path: Assets/Scenes/XR_FirstScene.unity
+    guid: cefa22ca3e8509644b5cd2779879aec0
+  - enabled: 1
+    path: Assets/Scenes/XR_SecondScene.unity
+    guid: 935590417b2c0f4488d63b381c7c860c
   - enabled: 1
     path: Assets/Scenes/XR_Level1.unity
     guid: 2df64b07f9a9be6419109e3aea9cb51b

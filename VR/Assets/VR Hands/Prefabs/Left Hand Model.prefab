@@ -322,7 +322,7 @@ GameObject:
   - component: {fileID: 7486799557702141310}
   m_Layer: 8
   m_Name: Left Hand Model
-  m_TagString: Changing Gun
+  m_TagString: LeftHand
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

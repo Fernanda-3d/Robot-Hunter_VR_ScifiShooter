@@ -7,6 +7,7 @@ public class PressButton_Trigger : MonoBehaviour
 {
     public GameObject button;
     public UnityEvent OnPress;
+    public UnityEvent onRelease;
     GameObject presser;
     AudioSource sound;
     bool isPressed;

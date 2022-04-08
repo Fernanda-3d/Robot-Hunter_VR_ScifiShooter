@@ -40,13 +40,14 @@ public class Keyboard : MonoBehaviour
             normalButtons.SetActive(false);
             capsButtons.SetActive(true);
             caps = true;
-            else
-            {
-                normalButtons.SetActive(true);
-                capsButtons.SetActive(false);
-                caps = false;
-            }
         }
+        else
+        {
+            normalButtons.SetActive(true);
+            capsButtons.SetActive(false);
+            caps = false;
+        }
+        
     }
 
     

@@ -22,7 +22,7 @@ public class PressButton_Trigger : MonoBehaviour
     {
         if(!isPressed)
         {
-            button.transform.localPosition = new Vector3(0, 0.46f, 0);
+            button.transform.localPosition = new Vector3(0, 0.004f, 0);
             presser = other.gameObject;
             OnPress.Invoke();
             sound.Play();
@@ -34,7 +34,8 @@ public class PressButton_Trigger : MonoBehaviour
     {
         if (other.gameObject == presser)
         {
-            button.transform.localPosition = new Vector3(0, 0.5118264f, 0);            
+             button.transform.localPosition = new Vector3(0, 0.015f, 0);
+            onRelease.Invoke();
             isPressed = false;
         }
     }

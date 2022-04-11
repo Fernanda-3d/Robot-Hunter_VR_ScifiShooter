@@ -1,14 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
+using UnityEngine.UI;
 
 public class Keyboard : MonoBehaviour
 {
-    public TMP_InputField inputField;
+    public InputField inputField;
+
+       
     public GameObject normalButtons;
     public GameObject capsButtons;
     private bool caps;
+        
 
     void Start()
     {
@@ -50,5 +53,11 @@ public class Keyboard : MonoBehaviour
         
     }
 
-    
+    public void SaveName()
+    {
+        //save name
+        
+    }
+
+
 }

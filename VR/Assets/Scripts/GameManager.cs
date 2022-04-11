@@ -8,6 +8,12 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    [SerializeField] HighscoreHandler highscoreHandler;
+    [SerializeField] HighscoreUI showUI;
+    [SerializeField] string playerName; //change after for the saved name from the Input Text    
+     
+     
+
     // monitors the state of the game - used to track 
     public enum GameState
     {
@@ -64,10 +70,15 @@ public class GameManager : MonoBehaviour
 
     private void GameOver()
     {
-        eGameStatus = GameState.GameOver; //this will automatically stop the time and stop the points
-        onGameOver.Invoke();
 
-        Invoke("RestartGame", 4f);
+        eGameStatus = GameState.GameOver; //this will automatically stop the time and stop the points
+        //highscoreHandler.SetHighscoreIfGreater(playerScore);
+        highscoreHandler.AddHighScoreIfPossible(new HighscoreElements(playerName, playerScore));
+        showUI.ShowPanel();        
+        onGameOver.Invoke();
+              
+
+        Invoke("RestartGame", 8f);
 
         
     }

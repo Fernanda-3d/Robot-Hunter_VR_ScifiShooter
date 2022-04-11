@@ -16,7 +16,7 @@ public class Score : MonoBehaviour
         GameManager.AsteroidDestroyed -= DisplayScore;
     }
 
-    private void DisplayScore()
+    public void DisplayScore()
     {
         // Debug.Log(GameManager.playerScore);
         GetComponent<TextMeshProUGUI>().text = "Score: " + GameManager.playerScore.ToString();

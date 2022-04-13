@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
+using UnityEngine.AI;
 
 
 
@@ -18,7 +19,7 @@ public class Enemy_Instantiate : MonoBehaviour
     [Header("Enemy models")]
     public GameObject[] enemies;
 
-    
+        
     public int enemyCount;
     Vector3 temp;
 
@@ -31,6 +32,7 @@ public class Enemy_Instantiate : MonoBehaviour
     private void Start()
     {
         StartCoroutine(EnemySpawn());
+                        
     }
 
     private void Update()
@@ -40,16 +42,17 @@ public class Enemy_Instantiate : MonoBehaviour
 
     IEnumerator EnemySpawn()
     {
-        while (enemyCount < 20)
+        while (enemyCount < 40)
         {
             //get a random position for the enemy
             Vector3 spawnPoint = transform.position + new Vector3(Random.Range(-size.x / 2, size.x / 2),
                                                                   Random.Range(-size.y / 2, size.y / 2),
                                                                   Random.Range(-size.z / 2, size.z / 2));
 
-            GameObject enemyInst = Instantiate(enemies[UnityEngine.Random.Range(0,3)], spawnPoint, Quaternion.Euler(90,180,0));
+            GameObject enemyInst = Instantiate(enemies[UnityEngine.Random.Range(0, 3)], spawnPoint, Quaternion.identity);
+            enemyInst.GetComponent<EnemyMove>().enabled = true;
+            enemyInst.GetComponent<NavMeshAgent>().enabled = true;
             
-
             yield return new WaitForSeconds(1f);
             enemyCount += 1;
 

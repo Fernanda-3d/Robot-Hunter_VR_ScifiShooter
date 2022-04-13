@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
 {
     [SerializeField] HighscoreHandler highscoreHandler;
     [SerializeField] HighscoreUI showUI;
+    [SerializeField] GameObject gunsSelection;
    
     public string playerName;
      
@@ -78,9 +79,11 @@ public class GameManager : MonoBehaviour
         highscoreHandler.AddHighScoreIfPossible(new HighscoreElements(playerName, playerScore));
         showUI.ShowPanel();        
         onGameOver.Invoke();
+        gunsSelection.SetActive(false);
+        
               
 
-        Invoke("RestartGame", 8f);
+        Invoke("RestartGame", 12f);
 
         
     }
@@ -110,10 +113,12 @@ public class GameManager : MonoBehaviour
     {
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(currentSceneIndex);
-        /* onGameReset.Invoke();
+        // onGameReset.Invoke();
 
-         sliderCurrentFillAmount = 1f;
-         playerScore = 0; */
+        // sliderCurrentFillAmount = 1f;
+         playerScore = 0;
+
+        gunsSelection.SetActive(true);
 
 
     }

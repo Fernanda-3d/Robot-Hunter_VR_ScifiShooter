@@ -44,7 +44,7 @@ public class HighscoreHandler : MonoBehaviour
     } */
 
     List<HighscoreElements> highscoreList = new List<HighscoreElements>();
-    [SerializeField] int maxCount = 6;
+    [SerializeField] int maxCount = 5;
     [SerializeField] string filename;
     
 

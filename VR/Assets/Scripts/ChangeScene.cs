@@ -19,6 +19,11 @@ public class ChangeScene : MonoBehaviour
 
     public void SkipTutorial()
     {
-        SceneManager.LoadScene("XR_Level1");
+        SceneManager.LoadScene("XR_SecondScene");
+    }
+
+    public void Quit()
+    {
+        Application.Quit();
     }
 }

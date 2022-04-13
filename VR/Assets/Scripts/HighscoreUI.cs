@@ -55,26 +55,27 @@ public class HighscoreUI : MonoBehaviour
     // and events 
     private void UpdateUI (List<HighscoreElements> list)
     {
-        for (int i = 0; i < list.Count; i++)
-        {
-            HighscoreElements el = list[i];
+          for (int i = 0; i < list.Count; i++)
+          {
+              HighscoreElements el = list[i];
 
-            if (el.points > 0)
-            {
-                if (i >= uiElements.Count)
-                {
-                    //instantiate new entry
-                    var inst = Instantiate(highscoreUIPrefab, Vector3.zero, Quaternion.identity);
-                    inst.transform.SetParent(elementWrapper, false);
+              if (el.points > 0)
+              {
+                  if (i >= uiElements.Count)
+                  {
+                      //instantiate new entry
+                      var inst = Instantiate(highscoreUIPrefab, Vector3.zero, Quaternion.identity);
+                      inst.transform.SetParent(elementWrapper, false);
 
-                    uiElements.Add(inst);
-                }
+                      uiElements.Add(inst);
+                  }
 
-                // write or overwrite name and points
-                var texts = uiElements[i].GetComponentsInChildren<Text>();
-                texts[0].text = el.playerName;
-                texts[1].text = el.points.ToString();
-            }
-        }
-    }
+                  // write or overwrite name and points
+                  var texts = uiElements[i].GetComponentsInChildren<Text>();
+                  texts[0].text = el.playerName;
+                  texts[1].text = el.points.ToString();
+              }
+          } 
+        
+}
 }

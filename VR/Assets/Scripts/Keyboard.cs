@@ -2,11 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Keyboard : MonoBehaviour
 {
     public InputField inputField;
+    private float delay;
 
+    public string theName;
+    public static string playerName;
        
     public GameObject normalButtons;
     public GameObject capsButtons;
@@ -16,6 +20,7 @@ public class Keyboard : MonoBehaviour
     void Start()
     {
         caps = false;
+        
     }
 
     public void InsertChar(string c)
@@ -55,8 +60,20 @@ public class Keyboard : MonoBehaviour
 
     public void SaveName()
     {
-        //save name
+
+        theName = inputField.GetComponentInChildren<Text>().text;
+        playerName = theName;
+        PlayerPrefs.SetString("theName", playerName);
+
+        StartCoroutine(WaitforSceneLoad());
         
+                
+    }
+
+    IEnumerator WaitforSceneLoad()
+    {
+        yield return new WaitForSeconds(3);
+        SceneManager.LoadScene("XR_FirstScene");
     }
 
 

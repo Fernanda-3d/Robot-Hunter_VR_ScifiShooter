@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3126055500531205653}
   - component: {fileID: -3652665367909305738}
   - component: {fileID: 649726346422371789}
+  - component: {fileID: -7014817799961548442}
   m_Layer: 0
   m_Name: Smoke_Enemy1
   m_TagString: Untagged
@@ -4975,6 +4976,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &-7014817799961548442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3126055500531205655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93d00614de2d9164e84bf8d76dfc016f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4811810982346743873
 GameObject:
   m_ObjectHideFlags: 0

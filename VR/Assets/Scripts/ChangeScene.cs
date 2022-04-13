@@ -14,6 +14,11 @@ public class ChangeScene : MonoBehaviour
 
     public void PressStart()
     {
-        SceneManager.LoadScene("XR_FirstScene");
+        SceneManager.LoadScene("XR_KeyboardMenu");
+    }
+
+    public void SkipTutorial()
+    {
+        SceneManager.LoadScene("XR_Level1");
     }
 }

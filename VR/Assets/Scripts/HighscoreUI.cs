@@ -14,6 +14,7 @@ public class HighscoreUI : MonoBehaviour
           highscoreText.text = score.ToString();
       } */
 
+    [SerializeField] GameObject coins, life;
     [SerializeField] GameObject panel;
     [SerializeField] GameObject highscoreUIPrefab; //Prefab created with name and points
     [SerializeField] Transform elementWrapper; //empty GO that all the entries will lign up on
@@ -38,11 +39,16 @@ public class HighscoreUI : MonoBehaviour
     public void ShowPanel()
     {
         panel.SetActive(true);
+        coins.SetActive(false);
+        life.SetActive(false);
+
     }
 
     private void ClosePanel()
     {
         panel.SetActive(false);
+        coins.SetActive(true);
+        life.SetActive(true);
     }
 
     //this method could have been called as public and triggered when the ui appears / but will leave private to use delegates 

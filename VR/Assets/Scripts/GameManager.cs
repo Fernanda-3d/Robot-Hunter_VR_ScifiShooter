@@ -10,7 +10,8 @@ public class GameManager : MonoBehaviour
 {
     [SerializeField] HighscoreHandler highscoreHandler;
     [SerializeField] HighscoreUI showUI;
-    [SerializeField] string playerName; //change after for the saved name from the Input Text    
+   
+    public string playerName;
      
      
 
@@ -42,6 +43,7 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         eGameStatus = GameState.Intro;
+        playerName = PlayerPrefs.GetString("theName", playerName);
     }
 
     private void Update()
@@ -89,6 +91,8 @@ public class GameManager : MonoBehaviour
         {
             playerScore += 100;
             AsteroidDestroyed();
+
+            
         }
         else
         {

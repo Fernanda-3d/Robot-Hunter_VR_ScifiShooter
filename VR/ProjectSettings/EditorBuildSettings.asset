@@ -21,6 +21,9 @@ EditorBuildSettings:
     path: Assets/Scenes/XR_MainMenu.unity
     guid: cdf370a2192661645994e27e5f258e15
   - enabled: 1
+    path: Assets/Scenes/XR_KeyboardMenu.unity
+    guid: ed583c68078ef674d84caa2b21649c9d
+  - enabled: 1
     path: Assets/Scenes/XR_FirstScene.unity
     guid: cefa22ca3e8509644b5cd2779879aec0
   - enabled: 1

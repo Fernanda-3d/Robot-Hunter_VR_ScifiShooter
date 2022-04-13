@@ -56,6 +56,7 @@ public class FireGun : MonoBehaviour
             if (hit.collider.gameObject.tag == "Asteroid")
             {
                 Destroy(hit.collider.gameObject);
+                GameManager.playerScore += 500;
             }
             if (hit.collider.gameObject.tag == "Enemy")
             {
